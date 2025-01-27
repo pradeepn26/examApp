@@ -1,1 +1,15 @@
-<p>home works!</p>
+<p>About Me</p>
+<h3>Pradeep</h3>
+<h3>Lead</h3>
+<hr/>
+<h3>People I know</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email Id</th>
+    </tr>
+    <tr *ngFor="let p of _exptDataServ.getContactDetails">
+        <td>{{p.name}}</td>
+        <td>{{p.emailId}}</td>        
+    </tr>
+</table>

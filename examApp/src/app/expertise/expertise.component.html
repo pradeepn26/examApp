@@ -1,1 +1,11 @@
-<p>expertise works!</p>
+<p>Expertise</p>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    <tr *ngFor="let p of _exptDataServ.postDetails">
+        <td>{{p.expName}}</td>
+        <td>{{p.expDesc}}</td>        
+    </tr>
+</table>
